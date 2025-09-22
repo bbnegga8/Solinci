@@ -610,4 +610,27 @@ if (!modeSwitch.checked) {
 } else {
   labelLite.classList.remove('active');
   labelPro.classList.add('active');
-}<script></body></html>
+}<script><script>
+document.addEventListener("DOMContentLoaded", function () {
+  const modeSwitch = document.getElementById('modeSwitch');
+  const labelLite = document.getElementById('label-lite');
+  const labelPro = document.getElementById('label-pro');
+  modeSwitch.addEventListener('change', function() {
+    if (modeSwitch.checked) {
+      labelLite.classList.remove('active');
+      labelPro.classList.add('active');
+    } else {
+      labelLite.classList.add('active');
+      labelPro.classList.remove('active');
+    }
+  });
+  // Initial state
+  if (!modeSwitch.checked) {
+    labelLite.classList.add('active');
+    labelPro.classList.remove('active');
+  } else {
+    labelLite.classList.remove('active');
+    labelPro.classList.add('active');
+  }
+});
+</script></body></html>
