@@ -591,4 +591,144 @@ document.querySelectorAll('button[id^="headlessui-disclosure-button"]').forEach(
     }
   });
 });
-</body></html>
+<script>
+document.querySelectorAll('button[id^="headlessui-disclosure-button"]').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    // Récupère le panel réponse
+    const panelId = btn.getAttribute('aria-controls');
+    const panel = document.getElementById(panelId);
+
+    // Récupère la flèche SVG
+    const svg = btn.querySelector('svg');
+    // Vérifie si le panel est ouvert
+    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+    // Toggle aria-expanded
+    btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+    btn.setAttribute('data-headlessui-state', isOpen ? '' : 'open');
+    if (panel) {
+      panel.style.display = isOpen ? 'none' : '';
+      panel.setAttribute('data-headlessui-state', isOpen ? '' : 'open');
+    }
+    // Change la flèche SVG (chevron-up/down)
+    if (svg) {
+      svg.setAttribute('data-icon', isOpen ? 'chevron-down' : 'chevron-up');
+      svg.innerHTML = isOpen
+        ? '<path fill="currentColor" d="M278.6 406.6c-12.5 12.5-32.8 12.5-45.3 0l-192-192c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L256 338.7l169.4-169.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-192 192z"></path>'
+        : '<path fill="currentColor" d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>';
+    }
+  });
+});
+<script>
+document.querySelectorAll('button[id^="headlessui-disclosure-button"]').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    // Récupère le panel réponse
+    const panelId = btn.getAttribute('aria-controls');
+    const panel = document.getElementById(panelId);
+
+    // Récupère la flèche SVG
+    const svg = btn.querySelector('svg');
+    // Vérifie si le panel est ouvert
+    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+    // Toggle aria-expanded
+    btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+    btn.setAttribute('data-headlessui-state', isOpen ? '' : 'open');
+    if (panel) {
+      panel.style.display = isOpen ? 'none' : '';
+      panel.setAttribute('data-headlessui-state', isOpen ? '' : 'open');
+    }
+    // Change la flèche SVG (chevron-up/down)
+    if (svg) {
+      svg.setAttribute('data-icon', isOpen ? 'chevron-down' : 'chevron-up');
+      svg.innerHTML = isOpen
+        ? '<path fill="currentColor" d="M278.6 406.6c-12.5 12.5-32.8 12.5-45.3 0l-192-192c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L256 338.7l169.4-169.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-192 192z"></path>'
+        : '<path fill="currentColor" d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>';
+    }
+  });
+});
+<script>
+document.querySelectorAll('button[id^="headlessui-disclosure-button"]').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    // Récupère le panel réponse
+    const panelId = btn.getAttribute('aria-controls');
+    const panel = document.getElementById(panelId);
+
+    // Récupère la flèche SVG
+    const svg = btn.querySelector('svg');
+    // Vérifie si le panel est ouvert
+    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+    // Toggle aria-expanded
+    btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+    btn.setAttribute('data-headlessui-state', isOpen ? '' : 'open');
+    if (panel) {
+      panel.style.display = isOpen ? 'none' : '';
+      panel.setAttribute('data-headlessui-state', isOpen ? '' : 'open');
+    }
+    // Change la flèche SVG (chevron-up/down)
+    if (svg) {
+      svg.setAttribute('data-icon', isOpen ? 'chevron-down' : 'chevron-up');
+      svg.innerHTML = isOpen
+        ? '<path fill="currentColor" d="M278.6 406.6c-12.5 12.5-32.8 12.5-45.3 0l-192-192c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L256 338.7l169.4-169.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-192 192z"></path>'
+        : '<path fill="currentColor" d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>';
+    }
+  });
+});
+<script>
+document.querySelectorAll('button[id^="headlessui-disclosure-button"]').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    // Récupère le panel réponse
+    const panelId = btn.getAttribute('aria-controls');
+    const panel = document.getElementById(panelId);
+
+    // Récupère la flèche SVG
+    const svg = btn.querySelector('svg');
+    // Vérifie si le panel est ouvert
+    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+    // Toggle aria-expanded
+    btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+    btn.setAttribute('data-headlessui-state', isOpen ? '' : 'open');
+    if (panel) {
+      panel.style.display = isOpen ? 'none' : '';
+      panel.setAttribute('data-headlessui-state', isOpen ? '' : 'open');
+    }
+    // Change la flèche SVG (chevron-up/down)
+    if (svg) {
+      svg.setAttribute('data-icon', isOpen ? 'chevron-down' : 'chevron-up');
+      svg.innerHTML = isOpen
+        ? '<path fill="currentColor" d="M278.6 406.6c-12.5 12.5-32.8 12.5-45.3 0l-192-192c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L256 338.7l169.4-169.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-192 192z"></path>'
+        : '<path fill="currentColor" d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>';
+    }
+  });
+});
+<script>document.addEventListener("DOMContentLoaded", function () {
+  // Sélectionne tous les boutons FAQ (ceux avec id commençant par "headlessui-disclosure-button")
+  document.querySelectorAll('button[id^="headlessui-disclosure-button"]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const panelId = btn.getAttribute('aria-controls');
+      const panel = document.getElementById(panelId);
+
+      // Récupère l'icône SVG
+      const svg = btn.querySelector('svg');
+      // Vérifie l'état
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+      // Toggle attributs et affichage
+      btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      btn.setAttribute('data-headlessui-state', isOpen ? '' : 'open');
+      if (panel) {
+        panel.style.display = isOpen ? 'none' : '';
+        panel.setAttribute('data-headlessui-state', isOpen ? '' : 'open');
+      }
+      // Change le chevron
+      if (svg) {
+        svg.setAttribute('data-icon', isOpen ? 'chevron-down' : 'chevron-up');
+        svg.innerHTML = isOpen
+          ? '<path fill="currentColor" d="M278.6 406.6c-12.5 12.5-32.8 12.5-45.3 0l-192-192c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L256 338.7l169.4-169.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-192 192z"></path>'
+          : '<path fill="currentColor" d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>';
+      }
+    });
+  });
+});<script></body></html>
